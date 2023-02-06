@@ -1,0 +1,51 @@
+/* 레이아웃 */
+body {background-color: white;}
+#main{
+    height: 610px;
+}
+footer{
+    height: 100px;
+    background-color: #c6c6c6;
+    border-top: black 1px solid;
+}
+/* 컨테이너 */
+.container {
+    width: 1000px;
+    height: inherit;
+    margin: 0 auto;
+}
+
+/* 메인 */
+#logo {
+    padding-top: 90px;
+    padding-bottom: 50px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 900;
+}
+#user_input, #checkbox_row {
+    text-align: center;
+}
+#id, #password {
+    width: 30%;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+}
+#keep_login {
+    margin: 20px 0;
+    margin-left: 30px;
+}
+#register {
+    width: 30%;
+    padding: 10px 0;
+    display: block;
+    margin: 10px auto;
+}
+#login {
+    width: 30%;
+    padding: 10px 0;
+    display: block;
+    margin: 10px auto;
+    color: white;
+    background-color: black;
+}

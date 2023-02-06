@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>커뮤니티 글 등록</title>
+
+    <!--style-->
+    <link rel="stylesheet" href="css/init.css">
+    <link rel="stylesheet" href="css/upload_community.css">
+    
+    <!--아이콘-->
+    <!--웹폰트-->
+    
+    <!-- HTLM5shiv ie6~8 -->
+    <!--[if lt IE 9]> 
+        <script src="js/html5shiv.min.js"></script>
+        <script type="text/javascript">
+            alert("현재 당신이 보는 브라우저는 지원하지 않습니다. 최신 브라우저로 업데이트해주세요!");
+        </script>
+    <![endif]-->
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="row">
+                <div class="header_title">사이트 이름</div>
+                <div class="header_menu">
+                    <button id="main_btn" type="button" onclick="location.href='index.html'">찾아보기</button>
+                    <button id="community_btn" type="button" onclick="location.href='community.html'">커뮤니티</button>
+                    <button id="mypage_btn" type="button" onclick="location.href='index.html'">마이페이지</button>
+                    <button id="login_btn" type="button" onclick="location.href='login.html'">로그인</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div id="checkbox">
+                <label for="talk"><input type="checkbox" id="talk" value="잡담">잡담</label>
+                <label for="question"><input type="checkbox" id="question" value="질문">질문</label>
+                <label for="ads"><input type="checkbox" id="ads" value="홍보">홍보</label>
+            </div>
+            <div id="article">
+                <form class="form_info" method="get" action="upload_community.html">
+                    <input type="text" id="article_title" placeholder="제목을 입력하세요"><br>
+                    <textarea name="article_text" id="article_text" cols="30" rows="10"></textarea>
+                    <div id="button_wrap"><button id="submit_btn" type="submit" value="등록하기">등록하기</button></div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container"></div>
+    </footer>
+</body>
+</html>

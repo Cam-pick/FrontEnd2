@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+/* 여백 초기화 */
+* {
+    margin:0;
+    padding:0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+/* a 링크 초기화 */
+a {color: #222; text-decoration: none;}
+a:hover {color: #c6c6c6;}
+
+/* 폰트 초기화 */
+* {font-family: 'Nanum Gothic', AppleSDGothicNeo-Regular,'Malgun Gothic','맑은 고딕',dotum,'돋움',sans-serif; color: #222; font-size: 15px;}

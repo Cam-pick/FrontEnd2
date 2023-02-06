@@ -1,0 +1,139 @@
+body {background-color: white;}
+#header {
+    width: 100%;
+    height: 55px;
+    background-color: #c6c6c6;
+    border-bottom: black 1px solid;
+    clear: both;
+}
+#article {
+    width: 100%;
+    height: auto;
+}
+footer {
+    height: 100px;
+    background-color: #c6c6c6;
+    border-top: black 1px solid;
+}
+/* 컨테이너 */
+.container {width: 1000px; margin: 0 auto; height: inherit;}
+
+/* 헤더 */
+.header_title {
+    float: left;
+    font-weight: 900;
+    display: inline;
+    padding: 16px 0;
+}
+.header_menu {
+    float: right;
+    text-align: right;
+    padding: 10px 0
+}
+.header_menu button {
+    color: black;
+    padding: 4px 8px;
+    margin-left: 5px;
+    transition: color 0.4s ease;
+}
+.header_menu a:hover {color: white;}
+#login_btn {margin-left: 30px;}
+
+/* 작성글 헤드라인 */
+#headline {
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 5px;
+    display: inline-block;
+    background-color: #c6c6c6;
+    border: black 1px solid;
+}
+#tag {
+    margin: 15px 15px 15px 25px;
+    padding: 5px 14px;
+}
+#title {
+    width: 70%;
+    display: inline-block;
+    font-size: 18px;
+    margin-right: 20px;
+}
+#delete {
+    margin-right: 10px;
+    padding: 5px 14px;
+}
+#modify {
+    margin-right: 5px;
+    padding: 5px 14px;
+}
+
+/* 작성글 텍스트 */
+#text {
+    width: 100%;
+    height: 500px;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    background-color: #c6c6c6;
+    border: black 1px solid;
+}
+
+/* 댓글 */
+#form_user_comment {
+    width: 100%;
+    margin-bottom: 20px;
+}
+#comment_count {
+    margin-bottom: 10px; 
+}
+#comment_input {
+    width: 91%;
+    height: 4em;
+}
+#submit {
+    background-color: #c6c6c6;
+    width: 5.5em;
+    height: 4em;
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+}
+#others_comment {
+    margin-bottom: 50px;
+}
+.profile_img {
+    float: left;
+    width: 45px;
+    height: 45px;
+    border-radius: 15px;
+    margin-right: 10px;
+}
+.form_others_comment {
+    margin-bottom: 20px;
+}
+.others_name {
+    height: 45px;
+    line-height: 45px;
+    font-weight: bold;
+    font-size: 18px;
+}
+.others_time {
+    height: 1em;
+    line-height: 1em;
+    font-size: 3px;
+}
+.form_others_comment .modify, .form_others_comment .delete{
+    float: right;
+    height: 45px;
+    line-height: 45px;
+    font-size: 14px;
+    padding: 0 5px;
+}
+.others_text {
+    padding-top: 4px;
+    padding-left: 2px;
+    font-size: 16px;
+}
+.reply {
+    padding-left: 2px;
+    font-size: 12px;
+}

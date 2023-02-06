@@ -1,0 +1,218 @@
+/* 레이아웃 */
+body {background-color: white;}
+#header {
+    width: 100%;
+    height: 55px;
+    background-color: #c6c6c6;
+    border-bottom: black 1px solid;
+    clear: both;
+}
+#banner {
+    width: 100%;
+    height: 350px;
+    background-color: #c6c6c6;
+    border-bottom: black 1px solid;
+}
+#contents_taglist {
+    width: 100%;
+    height: auto;
+    background-color: #ffffff;
+}
+#contents_article {
+    overflow: hidden;
+    width: 100%;
+    padding-top: 1%;
+    padding-bottom: 4%;
+    background-color: #ffffff;
+}
+footer {
+    height: 100px;
+    background-color: #c6c6c6;
+    border-top: black 1px solid;
+}
+
+/* 컨테이너 */
+.container {
+    width: 1000px;
+    height: inherit;
+    margin: 0 auto;
+}
+.modal_container{
+    margin: 0 auto;
+}
+/* 헤더 */
+.header_title {
+    float: left;
+    font-size: 16px;
+    font-weight: 900;
+    display: inline;
+    padding: 16px 0;
+}
+.header_menu {
+    float: right;
+    text-align: right;
+    padding: 10px 0
+}
+.header_menu button {
+    color: black;
+    padding: 4px 8px;
+    margin-left: 5px;
+    transition: color 0.4s ease;
+}
+.header_menu a:hover {color: white;}
+#login_btn {margin-left: 30px;}
+
+/* 배너 */
+.banner_title {
+    text-align: center;
+    padding: 60px 0 50px 0;
+}
+.banner_title h2{
+    font-size: 18px;
+}
+.banner_title p {
+    padding-top: 20px;
+}
+.banner_search {
+    text-align: center;
+    position: relative;
+}
+#banner_search {
+    width: 480px;
+    height: 40px;
+    border-radius: 18px;
+    border: 1px solid black; 
+    padding-left: 20px;
+}
+.fa-magnifying-glass {
+    top: 10px;
+    right: 280px; 
+    margin: 0;
+    font-size: 20px;
+    position: absolute;
+}
+
+/* 태그 리스트 */
+#contents_taglist > h2 {
+    padding: 20px 0 0 0;
+    font-size: 18px;
+}
+.tags {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+    height: auto;
+}
+#line1, #line2 {padding: 10px 0;}
+#tag:nth-child(1) {margin-left: 0;}
+#tag {
+    padding: 10px 40px;
+    margin: 0 15px;
+    display: inline-block;
+}
+#latest {
+    padding: 8px 20px;
+    margin-left: 70px;
+}
+#hottest {
+    padding: 8px 20px;
+    margin-left: 10px;
+}
+
+/* 모집글 */
+.article{
+    width: 21%;
+    height: 220px;
+    margin: 2%;
+    float: left;
+    background-color: #c6c6c6;
+    border-radius: 10px;
+}
+#test{
+    background-image: url(../img/cat1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#article_img{
+    width: 100%;
+    height: 50%;
+    padding: 10px 0;
+}
+#article_title{
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 18px;
+}
+#article_text{
+    text-align: center;
+    height: 100px;
+    padding: 10px 0;
+    margin-bottom: 15px;
+    background-color: #c6c6c6;
+}
+#article_btn{
+    text-align: center;
+    margin-bottom: 4px;
+}
+#message {padding: 8px 25px;}
+#apply {
+    padding: 8px 25px;
+    background-color: black;
+    color: white;
+}
+#apply:hover{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+/* 페이징 */
+.page_nation li{
+    list-style: none;
+    padding: 2px;
+}
+.page_nation #prev{
+    margin-right: 15px;
+}
+.page_nation #next{
+    margin-left: 15px;
+}
+.page_wrap{
+    text-align: center;
+    font-size: 0;
+    clear: both;
+}
+.page_nation  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:20px;
+}
+.page_nation a {
+    display:block;
+    margin:0 3px;
+    float:left;
+    border:1px solid #e6e6e6;
+    width:28px;
+    height:28px;
+    line-height:28px;
+    text-align:center;
+    background-color:#c6c6c6;
+    font-size:13px;
+    color:black;
+    text-decoration:none;
+    font-weight:bold;
+}
+.page_nation a:hover{
+    background-color: rgba(0, 0, 0, 0.4);
+}
+/* 미디어 쿼리 */
+/* 화면 너비 0 ~ 1200px */
+@media (max-width: 1220px){
+    .container {width: 100%;}
+    .row {padding: 0 15px;}
+    #contents_article .article {width: 29.3333%; height: 200px;}
+}
+
+/* 화면 너비 0 ~ 768px */
+@media (max-width: 768px){
+    #contents_article > div {width: 44%; height: 150px;}
+}

@@ -1,0 +1,31 @@
+/* 레이아웃 */
+body {background-color: white;}
+#main{
+    height: auto;
+}
+footer{
+    height: 100px;
+    background-color: #c6c6c6;
+    border-top: black 1px solid;
+}
+
+/* 컨테이너 */
+.container {
+    width: 300px;
+    height: auto;
+    margin: 0 auto;
+}
+
+/* 메인 */
+#logo {
+    padding-top: 90px;
+    padding-bottom: 50px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 900;
+}
+.form_info{
+    text-align: center;
+}
+
+

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>모임 글 등록</title>
+
+    <!--style-->
+    <link rel="stylesheet" href="css/init.css">
+    <link rel="stylesheet" href="css/upload_article.css">
+
+    <!-- HTLM5shiv ie6~8 -->
+    <!--[if lt IE 9]> 
+        <script src="js/html5shiv.min.js"></script>
+        <script type="text/javascript">
+            alert("현재 당신이 보는 브라우저는 지원하지 않습니다. 최신 브라우저로 업데이트해주세요!");
+        </script>
+    <![endif]-->
+
+    <!--아이콘-->
+    <!--웹폰트-->
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="row">
+                <div class="header_title">사이트 이름</div>
+                <div class="header_menu">
+                    <button id="main_btn" type="button" onclick="location.href='index.html'">찾아보기</button>
+                    <button id="community_btn" type="button" onclick="location.href='community.html'">커뮤니티</button>
+                    <button id="mypage_btn" type="button" onclick="location.href='index.html'">마이페이지</button>
+                    <button id="login_btn" type="button" onclick="location.href='login.html'">로그인</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <h1 id="title">모임을 등록해주세요</h1>
+            <form action="">
+                <div id="party_name">
+                    <div class="section1">모임 이름이<br>무엇인가요?</div>
+                    <input class="section2" type="text" name="party_name">
+                </div>
+                <div id="party_tags">
+                    <div class="section1" id="tag1">모임을 나타내는<br>태그를 선택하세요</div>
+                    <div class="section2" id="tag2">
+                        <div id="line1">
+                            <button id="tag" type="button" value="운동">운동</button>
+                            <button id="tag" type="button" value="운동">운동</button>
+                            <button id="tag" type="button" value="운동">운동</button>
+                            <button id="tag" type="button" value="운동">운동</button>
+                            <button id="tag" type="button" value="운동">운동</button>
+                        </div>
+                        <div id="line2">
+                            <button id="tag" type="button">운동</button>
+                            <button id="tag" type="button">운동</button>
+                            <button id="tag" type="button">운동</button>
+                            <button id="tag" type="button">운동</button>
+                            <button id="tag" type="button">운동</button>
+                        </div>
+                    </div>
+                </div> 
+                <div id="party_introduce">
+                    <div class="section1">모임을<br>소개해주세요</div>
+                    <textarea class="section2" name="party_introduce" id="introduce" cols="30" rows="10"></textarea>
+                </div>
+                <div id="party_img">
+                    <div class="section1">모임을 나타내는<br>사진을 설정하세요</div>
+                    <div class="section2" id="insert_img"></div>
+                </div>
+                <div id="btn_row">
+                    <input id="search_btn" type="button" value="이미지 찾기">
+                    <input id="delete_btn" type="button" value="삭제">
+                </div>
+                <div id="upload_row"><input id="upload_btn" type="button" value="등록하기"></div>
+                
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="container"></div>
+    </footer>
+</body>
+</html>

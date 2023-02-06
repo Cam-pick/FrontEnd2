@@ -1,0 +1,128 @@
+/* 레이아웃 */
+body {background-color: white;}
+#header {
+    width: 100%;
+    height: 55px;
+    background-color: #c6c6c6;
+    border-bottom: black 1px solid;
+    clear: both;
+}
+main {
+    width: 100%;
+    height: 800px;
+}
+footer {
+    height: 100px;
+    background-color: #c6c6c6;
+    border-top: black 1px solid;
+}
+
+/* 컨테이너 */
+.container {
+    width: 1000px;
+    height: inherit;
+    margin: 0 auto;
+}
+/* 헤더 */
+.header_title {
+    float: left;
+    font-size: 16px;
+    font-weight: 900;
+    display: inline;
+    padding: 16px 0;
+}
+.header_menu {
+    float: right;
+    text-align: right;
+    padding: 10px 0
+}
+.header_menu button {
+    color: black;
+    padding: 4px 8px;
+    margin-left: 5px;
+    transition: color 0.4s ease;
+}
+.header_menu a:hover {color: white;}
+#login_btn {margin-left: 30px;}
+
+/* 메인 */
+#title {
+    padding: 20px 0;
+    font-size: 18px;
+}
+#party_name {
+    height: 42px;
+    margin-bottom: 50px;
+}
+.section1 {
+    width: 40%;
+    height: 42px;
+    float: left;
+    display: inline;
+    font-weight: 900;
+}
+.section2 {
+    display: inline;
+    width: 60%;
+    height: 42px;
+}
+#tag1.section1 {
+    height: 100px;
+}
+#tag2.section2 {
+    display: inline;
+    float: right;
+    width: 60%;
+    height: 100px;
+}
+#line1, #line2 {
+    width: 100%;
+    height: 50%;
+}
+#tag {
+    margin: 8px 20px;
+    padding: 4px 20px;
+    display: inline-block;
+}
+#party_introduce .section1, #party_introduce .section2 {
+    height: 200px;
+    margin-top: 20px;
+}
+#party_img, #party_img .section1 {
+    height: 150px;
+}
+#insert_img{
+    width: 60%;
+    height: 150px;
+    float: right;
+    display: inline;
+    border: black 1px solid;
+}
+#btn_row {
+    clear: both;
+}
+#search_btn, #delete_btn {
+    float: right;
+    padding: 5px 20px;
+    margin: 8px;
+}
+#upload_row {
+    clear: both;
+    text-align: center;
+}
+#upload_btn {
+    padding: 10px 50px;
+    margin: 20px 0;
+    background-color: black;
+    color: white;
+}
+/* 미디어 쿼리 */
+/* 화면 너비 0 ~ 1200px */
+@media (max-width: 1200px){
+    
+}
+
+/* 화면 너비 0 ~ 768px */
+@media (max-width: 768px){
+    
+}

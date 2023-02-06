@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="모두의 모임 커뮤니티">
+    <meta name="description" content="다양한 모임을 통해서 나의 취미를 공유할 수 있는 친구를 만들어보세요!">
+    <title>모임 커뮤니티 사이트</title>
+
+    <!--style-->
+    <link rel="stylesheet" href="css/init.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    
+    <!--아이콘-->
+    <script src="https://kit.fontawesome.com/588a423e9c.js" crossorigin="anonymous"></script>
+
+    <!--웹폰트-->
+
+    <!-- HTLM5shiv ie6~8 -->
+    <!--[if lt IE 9]> 
+        <script src="js/html5shiv.min.js"></script>
+        <script type="text/javascript">
+            alert("현재 당신이 보는 브라우저는 지원하지 않습니다. 최신 브라우저로 업데이트해주세요!");
+        </script>
+    <![endif]-->
+</head>
+
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="row">
+                <div class="header_title">사이트 이름</div>
+                <div class="header_menu">
+                    <button id="main_btn" type="button" onclick="location.href='index.html'">찾아보기</button>
+                    <button id="community_btn" type="button" onclick="location.href='community.html'">커뮤니티</button>
+                    <button id="mypage_btn" type="button" onclick="location.href='index.html'">마이페이지</button>
+                    <button id="login_btn" type="button" onclick="location.href='login.html'">로그인</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="banner">
+            <div class="container">
+                <div class="banner_title">
+                    <h2>캠픽커뮤로 만나는 다양한 취미 친구!</h2>
+                    <p>잠시 집에서 벗어나 즐겁게 사람을 만나고 싶을 때,<br>
+                    다양한 모임을 통해서 나의 취미를 공유할 수 있는 친구를 만들어보세요!</p>
+                </div>
+                <div class="banner_search">
+                    <form class="banner_search" action="#" method="get">
+                        <input type="text" id="banner_search" name="banner_search" placeholder="내가 원하는 모임을 찾아보세요!">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section id="contents">
+            <div class="container">
+                <section id="contents_taglist">
+                    <h2>태그를 통해 쉽게 모임을 찾아보세요!</h2>
+                    <div class="tags">
+                        <div id="line1">
+                            <button id="tag" type="button" value="운동">운동</button>
+                            <button id="tag" type="button" value="운동">운동</button>
+                            <button id="tag" type="button" value="운동">운동</button>
+                            <button id="tag" type="button" value="운동">운동</button>
+                            <button id="tag" type="button" value="운동">운동</button>
+                            <button id="latest" type="button" value="최신순">최신순</button>
+                            <button id="hottest" type="button" value="인기순">인기순</button>
+                        </div>
+                        <div id="line2">
+                            <button id="tag" type="button">운동</button>
+                            <button id="tag" type="button">운동</button>
+                            <button id="tag" type="button">운동</button>
+                            <button id="tag" type="button">운동</button>
+                            <button id="tag" type="button">운동</button>
+                        </div>
+                    </div>
+                </section>
+                <section id="contents_article">
+                    <!--모달창-->
+                    <div id="modal" class="modal">
+                        <div class="modal_container">
+                            <!--스크랩 아이콘 추가 예정-->
+                            <button id="scrap">스크랩</button> 
+                            <img id="article_img" src="./img/cat1.jpg" alt="모임 사진">
+                            <h2 id="article_title">짱 배드민턴 모임</h2>
+                            <div id="article_text">
+                                같이 배드민턴 하며 놀 동네 친구들 모임입니다~
+                            </div>
+                            <div id="article_btn">
+                                <button id="message">메세지 보내기</button>
+                                <button id="apply" type="submit">바로 신청하기</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--모집글-->
+                    <a href="#modal" rel="modal:open"><div class="article" id="test"></div></a>
+                    <div class="article"></div>
+                    <div class="article"></div>
+                    <div class="article"></div>
+                    <div class="article"></div>
+                    <div class="article"></div>
+                    <div class="article"></div>
+                    <div class="article"></div>
+                    <div class="article"></div>
+                    <div class="article"></div>
+                    <div class="article"></div>
+                    <div class="article"></div>
+                    <div class="article"></div>
+                    <div class="article"></div>
+                    <div class="article"></div>
+                    <div class="article"></div>
+                    <div class="article"></div>
+                    <div class="article"></div>
+                    <div class="article"></div>
+                    <div class="article"></div>
+                    <div class="article"></div>
+                    <div class="article"></div>
+                    <div class="article"></div>
+                    <div class="article"></div>
+                    <!--페이징-->
+                    <div class="page_wrap">
+                        <ul class="page_nation">
+                            <li><a href="/board/list?p=처음" id="first">처음</a></li>
+                            <li><a href="/board/list?p=이전" id="prev">이전</a></li>
+                            <li><a href="/board/list?p=1">1</a></li>
+                            <li><a href="/board/list?p=2">2</a></li>
+                            <li><a href="/board/list?p=3">3</a></li>
+                            <li><a href="/board/list?p=4">4</a></li>
+                            <li><a href="/board/list?p=5">5</a></li>
+                            <li><a href="/board/list?p=다음" id="next">다음</a></li>
+                            <li><a href="/board/list?p=마지막" id="last">맨끝</a></li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+    
+        </div>
+    </footer>
+
+    <!-- JS Libraries -->
+    <script src="js/jquery.min_1.12.4.js"></script>
+    <script src="js/modernizr-custom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    
+
+</body>
+</html>
